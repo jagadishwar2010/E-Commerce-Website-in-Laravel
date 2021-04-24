@@ -10,4 +10,16 @@ class ProductController extends Controller
         $data = Product::all();
         return view('product', ['products' => $data]);
     }
+
+    function details($id) {
+        $data = Product::find($id);
+        return view('details', ['product'=>$data]);
+    }
+
+    function search (Request $req) {
+        $data =  Product::
+                 where('name', 'like', '%'.$req->input('query').'%')
+                 ->get();
+        return view('search', ['products'=>$data, 'Request' => $req]);
+    }
 }

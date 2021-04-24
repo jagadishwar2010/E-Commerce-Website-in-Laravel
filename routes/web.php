@@ -25,3 +25,5 @@ Route::get('/', [ProductController::class, 'index']);
 Route::get('/product', function () {
     return view('product');
 });
+Route::get('details/{id}', [ProductController::class, 'details']);
+Route::get('/search', [ProductController::class, 'search']);

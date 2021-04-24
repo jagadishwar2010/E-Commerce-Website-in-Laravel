@@ -26,12 +26,45 @@
     }
     .slider-img {
         height: 300px !important;
+        margin-left: 8%;
     }
     .custom-product {
         height: 600px;
     }
     .slider-text {
-        background-color: #718096;
+        background-color: #ffffff00;
+        color: #1a202c;
+        margin-left: 15%;
+        /*width: 15%;*/
+    }
+    .trending-image {
+        height: 100px;
+        display: block;
+        margin: auto;
+    }
+    .trending-items {
+        float: left;
+        width: 20%;
+        margin-right: 5%;
+    }
+    .trending-wrapper {
+        margin: 30px;
+    }
+    .container {
+        width: 100%;
+    }
+    .detail-img {
+        height: 200px;
+        margin-left: 20%;
+        margin-top: 5%;
+    }
+    .search-box {
+        width: 500px !important;
+    }
+    .searched-image {
+        height: 200px;
+        margin-left: 20%;
+        margin-top: 5%;
     }
 </style>
 </html>
