@@ -35,3 +35,5 @@ Route::get('/logout', function () {
 });
 
 Route::get('/cartList', [ProductController::class, 'cartList']);
+Route::get('/remove/{id}', [ProductController::class, 'removeFromCart']);
+Route::get('/ordernow', [ProductController::class, 'orderNow']);

@@ -5,6 +5,7 @@
             <div class="trending-wrapper">
                 @if(count($products))
                     <h3>Cart List</h3>
+                    <a class="btn btn-success" href="/ordernow">Order Now</a> <br> <br>
                     @foreach ($products as $item)
                         <div class="row searched-item cart-list-divider">
                             <div class="col-sm-4">
@@ -18,10 +19,11 @@
                                         <h2>{{$item->name}}</h2>
                                     </div>
                                 </a>
+                                <h4><b>Price: </b>{{$item->price}}</h4>
                                 <h5>{{$item->description}}</h5>
                             </div>
                             <div class="col-sm-3">
-                                <button class="btn btn-danger">Remove from Cart</button>
+                                <a href="/remove/{{$item->cart_id}}" class="btn btn-warning">Remove from Cart</a>
                             </div>
                         </div>
                     @endforeach
